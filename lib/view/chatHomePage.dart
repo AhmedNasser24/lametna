@@ -106,7 +106,7 @@ class ChatHomePage extends StatelessWidget {
                 ),
                 GestureDetector(
                   onTap: () {
-                    scaffoldKey.currentState.openEndDrawer();
+                    scaffoldKey.currentState?.openEndDrawer();
                   },
                   child: Icon(Icons.menu, size: 30.sp),
                 ),

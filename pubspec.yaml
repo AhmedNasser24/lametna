@@ -2,7 +2,7 @@ name: lametna
 description: A new Flutter project.
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
-publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+publish_to: "none" # Remove this line if you wish to publish to pub.dev
 
 # The following defines the version and build number for your application.
 # A version number is three numbers separated by dots, like 1.2.43
@@ -19,7 +19,7 @@ publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 version: 1.0.0+1
 
 environment:
-  sdk: '>=2.19.6 <3.0.0'
+  sdk: ">=2.19.6 <3.0.0"
 
 # Dependencies specify other packages that your package needs in order to work.
 # To automatically upgrade your package dependencies to the latest versions
@@ -31,7 +31,6 @@ dependencies:
   flutter:
     sdk: flutter
 
-
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
@@ -42,6 +41,35 @@ dependencies:
   device_preview: ^1.1.0
   flutter_screenutil: ^5.9.0
   get: ^4.6.6
+  google_fonts: ^6.1.0
+  http: ^1.1.2
+  image_picker: ^1.0.4
+  shared_preferences: ^2.2.2
+  get_ip_address: ^0.0.6
+  device_info_plus: ^9.1.1
+  geolocator: ^10.1.0
+  location: ^5.0.3
+  # geocoding:
+  # get_mac_address:
+  flutter_sound:
+  intl: ^0.18.1
+  animated_text_kit: ^4.2.2
+  flutter_keyboard_visibility: ^5.4.1
+  audio_session: ^0.1.18
+  # floating_draggable_widget:
+  flutter_launcher_icons: ^0.13.1
+  flutter_colorpicker: ^1.0.3
+  carousel_slider: ^4.2.1
+  emoji_picker_flutter: ^1.6.3
+  ####################### engine
+  agora_rtc_engine: ^6.2.6
+  agora_uikit: ^1.3.7
+  # zego_uikit:
+  # zego_uikit_prebuilt_call:
+  # zego_uikit_prebuilt_live_audio_room:
+  # ^2.2.3
+  zego_uikit_signaling_plugin: ^2.7.0
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -54,53 +82,24 @@ dev_dependencies:
   flutter_lints: ^2.0.0
   # flutter_launcher_icons: ^0.13.1
   permission_handler: ^11.1.0
-  google_fonts: ^6.1.0
-  http: ^1.1.2
-  # floating_draggable_widget:
-  flutter_launcher_icons: ^0.13.1
-  flutter_colorpicker: ^1.0.3
-  carousel_slider: ^4.2.1
-  emoji_picker_flutter: ^1.6.3
-  ####################### engine
-  agora_rtc_engine: ^6.2.6
-  agora_uikit: ^1.3.7
-  # zego_uikit: 
-  # zego_uikit_prebuilt_call:
-  # zego_uikit_prebuilt_live_audio_room: 
-  # ^2.2.3
-  zego_uikit_signaling_plugin: ^2.7.0
+
+  
 
   ######################
-  image_picker: ^1.0.4
-  shared_preferences: ^2.2.2
-  get_ip_address: ^0.0.6
-  device_info_plus: ^9.1.1
-  geolocator: ^10.1.0
-  location: ^5.0.3
-  # geocoding:  
-  # get_mac_address: 
-  flutter_sound: 
-  intl: ^0.18.1
-  animated_text_kit: ^4.2.2
-  flutter_keyboard_visibility: ^5.4.1
 
+  # record: ^4.4.4
+  # audioplayers:
 
-  # record: ^4.4.4 
-  # audioplayers: 
-
-  audio_session: ^0.1.18
-  
   # audioplayers: ^0.20.1
   # flutter_audio_recorder: ^0.5.5
   # audio_recorder:
   # zego_express_engine:
-  # zego_express_engine: 
-  # zego_uikit: 
-  # zego_uikit_prebuilt_call: 
+  # zego_express_engine:
+  # zego_uikit:
+  # zego_uikit_prebuilt_call:
   # zego_uikit_prebuilt_live_audio_room:
   # zego_uikit_signaling_plugin: ^1.0.14
- # flutter_secure_storage:
-
+  # flutter_secure_storage:
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
@@ -108,10 +107,9 @@ dev_dependencies:
 #   android: "launcher_icon"
 #   ios: true
 #   image_path: "assets/icons/logo.png"
-#   min_sdk_android: 21 
+#   min_sdk_android: 21
 # The following section is specific to Flutter packages.
 flutter:
-
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
   # the material Icons class.
@@ -127,8 +125,6 @@ flutter:
     - assets/icons/store/
     - assets/images/flags/
     - assets/icons/mangement/
-
-  
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
