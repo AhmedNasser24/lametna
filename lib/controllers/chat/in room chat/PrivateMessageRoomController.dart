@@ -20,7 +20,7 @@ class PrivateMessagesRoomController extends GetxController {
   var theSource = AudioSource.microphone;
   TextEditingController messageRoomController = TextEditingController();
   StreamController streamController = StreamController();
-  Timer _timer;
+  late Timer _timer;
 
   Codec _codec = Codec.aacMP4;
   String _mPath = 'tau_file.mp4';

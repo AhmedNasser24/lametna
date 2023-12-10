@@ -8,7 +8,7 @@ import 'package:lametna/controllers/userData/variables.dart';
 import 'package:get/get.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-Widget roomBuilder({dynamic data, ChatHomeController controller, isVIP = true}) {
+Widget roomBuilder({dynamic data, ChatHomeController? controller, isVIP = true}) {
   return Directionality(
     textDirection: TextDirection.rtl,
     child: GestureDetector(
@@ -24,7 +24,7 @@ Widget roomBuilder({dynamic data, ChatHomeController controller, isVIP = true}) 
             welcomeText: data["hello_msg"],
           );
         } else {
-          controller.checkIfBanned(roomId: data["room_id"], username: userName);
+          controller?.checkIfBanned(roomId: data["room_id"], username: userName);
         }
       },
       child: Padding(
@@ -329,10 +329,10 @@ Widget roomBuilder({dynamic data, ChatHomeController controller, isVIP = true}) 
 
 void showAlert(
   BuildContext context, {
-  String roomId,
-  String roomName,
-  String roomOwner,
-  String welcomeText,
+  String? roomId,
+  String? roomName,
+  String? roomOwner,
+  String? welcomeText,
 }) {
   Get.dialog(
     GetBuilder<ChatHomeController>(builder: (controller) {

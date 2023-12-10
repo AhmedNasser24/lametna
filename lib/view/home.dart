@@ -12,7 +12,7 @@ import 'package:lametna/controllers/userData/userCredentials.dart';
 import 'package:lametna/view/side%20pages/drawer.dart';
 
 class Home extends StatelessWidget {
-  Home({Key key}) : super(key: key);
+  Home({ Key? key}) : super(key: key);
   final GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
 
   @override
@@ -311,7 +311,7 @@ class Home extends StatelessWidget {
                   onPressed: () {
                     print("object");
                     // Scaffold.of(context).openDrawer();
-                    _scaffoldKey.currentState.openEndDrawer();
+                    _scaffoldKey.currentState?.openEndDrawer();
                   },
                   icon: Icon(Icons.menu)),
             ],
